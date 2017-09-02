@@ -155,7 +155,8 @@ class TreeProducer(Analyzer):
 
 		#############################################################################
 		
-		R = 0.8
+		R_Jet1 = 4*100/jets[0].pt()
+		R_Jet2 = 4*100/jets[1].pt()
 
 		flow_Jet1 = [0]*5
 		flow_Jet2 = [0]*5
@@ -165,12 +166,12 @@ class TreeProducer(Analyzer):
 			for constituent in jets[0].jetConstituents[1:]:
 				constituent_vector.SetPtEtaPhiE(constituent.pt(),constituent.eta(),constituent.phi(),constituent.e())
 				dR = jet1_ungroomed.DeltaR(constituent_vector)
-				if ((dR >= (n-1)/5*R) and (dR < n/5*R)):
+				if ((dR >= (n-1)/5*R_Jet1) and (dR < n/5*R_Jet1)):
 					flow_Jet1[n-1] += abs(constituent.pt())/abs(jets[0].pt())
 			for constituent in jets[1].jetConstituents[1:]:
                                 constituent_vector.SetPtEtaPhiE(constituent.pt(),constituent.eta(),constituent.phi(),constituent.e())
                                 dR = jet2_ungroomed.DeltaR(constituent_vector)
-                                if ((dR >= (n-1)/5*R) and (dR < n/5*R)):
+                                if ((dR >= (n-1)/5*R_Jet2) and (dR < n/5*R_Jet2)):
 					flow_Jet2[n-1] += abs(constituent.pt())/abs(jets[1].pt())
 
 		self.tree.fill('Jet1_Flow15', flow_Jet1[0]); self.tree.fill('Jet2_Flow15', flow_Jet2[0])

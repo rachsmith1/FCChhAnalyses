@@ -25,15 +25,17 @@ selectedComponents = [
 			pp_RSGraviton_30TeV_ww,
 			pp_RSGraviton_35TeV_ww,
 			pp_RSGraviton_40TeV_ww,
-			pp_jj012j_5f_HT_0_500,
-			pp_jj012j_5f_HT_500_1000,
-			pp_jj012j_5f_HT_1000_2000,
-			pp_jj012j_5f_HT_2000_4000,
-			pp_jj012j_5f_HT_4000_7200,
-			pp_jj012j_5f_HT_7200_15000,
-			pp_jj012j_5f_HT_15000_25000,
-			pp_jj012j_5f_HT_25000_35000,
-			pp_jj012j_5f_HT_35000_100000,
+			pp_jj_PT_500_1000,
+			pp_jj_PT_1000_2000,
+                        pp_jj_PT_2000_4000,
+                        pp_jj_PT_4000_6000,
+                        pp_jj_PT_6000_8000,
+                        pp_jj_PT_8000_10000,
+                        pp_jj_PT_10000_12000,
+                        pp_jj_PT_12000_14000,
+                        pp_jj_PT_14000_16000,
+                        pp_jj_PT_16000_20000,
+                        pp_jj_PT_20000_100000,
 			pp_tt012j_5f_HT_0_600,
 			pp_tt012j_5f_HT_600_1200,
 			pp_tt012j_5f_HT_1200_2100,
@@ -77,16 +79,6 @@ pp_tt012j_5f_HT_15000_25000.splitFactor = 10
 pp_tt012j_5f_HT_25000_35000.splitFactor = 10
 pp_tt012j_5f_HT_35000_100000.splitFactor = 10
 
-pp_jj012j_5f_HT_0_500.splitFactor = 10
-pp_jj012j_5f_HT_500_1000.splitFactor = 10
-pp_jj012j_5f_HT_1000_2000.splitFactor = 10
-pp_jj012j_5f_HT_2000_4000.splitFactor = 10
-pp_jj012j_5f_HT_4000_7200.splitFactor = 10
-pp_jj012j_5f_HT_7200_15000.splitFactor = 10
-pp_jj012j_5f_HT_15000_25000.splitFactor = 10
-pp_jj012j_5f_HT_25000_35000.splitFactor = 10
-pp_jj012j_5f_HT_35000_100000.splitFactor = 10
-
 pp_vv012j_4f_HT_0_300.splitFactor = 10
 pp_vv012j_4f_HT_300_1400.splitFactor = 10
 pp_vv012j_4f_HT_1400_2900.splitFactor = 10
@@ -96,6 +88,18 @@ pp_vv012j_4f_HT_8800_15000.splitFactor = 10
 pp_vv012j_4f_HT_15000_25000.splitFactor = 10
 pp_vv012j_4f_HT_25000_35000.splitFactor = 10
 pp_vv012j_4f_HT_35000_100000.splitFactor = 10
+
+pp_jj_PT_500_1000.splitFactor = 10
+pp_jj_PT_1000_2000.splitFactor = 10
+pp_jj_PT_2000_4000.splitFactor = 10
+pp_jj_PT_4000_6000.splitFactor = 10
+pp_jj_PT_6000_8000.splitFactor = 10
+pp_jj_PT_8000_10000.splitFactor = 10
+pp_jj_PT_10000_12000.splitFactor = 10
+pp_jj_PT_12000_14000.splitFactor = 10
+pp_jj_PT_14000_16000.splitFactor = 10
+pp_jj_PT_16000_20000.splitFactor = 10
+pp_jj_PT_20000_100000.splitFactor = 10
 
 #selectedComponents = [comp]
 
